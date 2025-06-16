@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body{
+    font-family: "Paytone One", sans-serif;
+}
+.sans{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+}
