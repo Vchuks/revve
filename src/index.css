@@ -1,20 +1,33 @@
 @import "tailwindcss";
 
-body{
-    font-family: "Paytone One", sans-serif;
+body {
+  font-family: "Paytone One", sans-serif;
 }
-.sans{
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
+.sans {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
 }
-.bills-bg{
-    background-image: url("./assets/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.bills-bg {
+  background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (max-width: 600px) {
-    .bills-bg{
-    background-position: center;
+::-webkit-scrollbar {
+  display: none;
 }
+
+.call {
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+}
+
+@media (max-width: 900px) {
+  .bills-bg {
+    background-position: center;
+  }
+  .call {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
 }

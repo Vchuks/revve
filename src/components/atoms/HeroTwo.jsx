@@ -1,7 +1,5 @@
 import boy from "../../assets/Mask.png";
 import green from "../../assets/B.png";
-import mouse from "../../assets/Mouse.png";
-import up from "../../assets/Vector (1).png";
 import boy2 from "../../assets/Shopping.png";
 import currency from "../../assets/Currency.png";
 import eat from "../../assets/Eating.png";
@@ -58,12 +56,7 @@ const HeroTwo = () => {
         </div>
       </div>
       <div className="w-full col-span-3 md:col-span-1 lg:w-[29rem] flex flex-col justify-center items-center">
-        <div className="text-[#00000052] sans flex items-center gap-3 justify-center pb-8 pt-4">
-          <img src={up} alt="" loading="lazy" />
-          <p className="">or</p>
-          <img src={mouse} alt="" loading="lazy" />
-          <p className="">Scroll down</p>
-        </div>
+        
         <div className="w-full lg:w-[93%] m-auto relative">
           <img src={boy} alt="" loading="lazy" className="w-full " />
           <p

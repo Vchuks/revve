@@ -18,9 +18,10 @@ export default function Cards() {
 
   return (
     <div
-      className=" flex items-center justify-center pb-0"
+      className=" flex items-center justify-center pb-0 w-full md:w-[24rem]"
       style={{
         backgroundImage: `url(${grp})`,
+        
         height: `${expandedHeight}px` ,
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
@@ -33,7 +34,7 @@ export default function Cards() {
           {cards.map((card, index) => (
             <div
               key={card.id}
-              className={`absolute w-full h-44 rounded-xl shadow-lg cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-105`}
+              className={`absolute w-full h-44 rounded-xl shadow-lg cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-110`}
               style={{
                 zIndex: cards.length - index,
                 transform: isExpanded
@@ -45,8 +46,9 @@ export default function Cards() {
                 backgroundSize: "cover",
                 backgroundPosition: "center"
               }}
-              onClick={() => setIsExpanded(!isExpanded)}
-              // onMouseLeave={() => setIsExpanded(!isExpanded)}
+              onClick={() =>
+                setIsExpanded(!isExpanded)}
+              
             ></div>
           ))}
         </div>
